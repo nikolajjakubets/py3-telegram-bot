@@ -52,5 +52,5 @@ def add(cq):
         print('В словарь добавлен новый ответ.\n')
     speak()
 
-speak()
 
+speak()
