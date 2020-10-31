@@ -7,7 +7,6 @@ import telebot
 import re
 import ui
 import json
-import re
 from difflib import SequenceMatcher as SM
 from config import main_cfg
 

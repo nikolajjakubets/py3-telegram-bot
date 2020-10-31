@@ -8,9 +8,9 @@ import re
 path = 'pyBot_dict.json'
 lvl = 0.7
 
-print ('\nБот запущен!')
-print ('--------------------------')
-print ('/q - завершить работу бота\n')
+print('\nБот запущен!')
+print('--------------------------')
+print('/q - завершить работу бота\n')
 
 
 def speak():
@@ -33,14 +33,14 @@ def speak():
             if i['q'] == rs:
                 res = i['a']
     if 'res' in locals():
-        print ('@ ', res, '\n')
+        print('@ ', res, '\n')
         speak()
     else:
         add(question)
 
 
 def add(cq):
-    print ('\nБот не знает ответа. Напишите новый ответ!')
+    print('\nБот не знает ответа. Напишите новый ответ!')
     newAnswer = input('Новый ответ > ')
     with open(path, 'r', encoding='utf-8') as jfr:
         jfr1 = json.load(jfr)
@@ -49,7 +49,8 @@ def add(cq):
         entry = {'q': cq, 'a': newAnswer, 'x': 'none'}
         jfw1.append(entry)
         json.dump(jfr1, jfw, indent=2, ensure_ascii=False)
-        print ('В словарь добавлен новый ответ.\n')
+        print('В словарь добавлен новый ответ.\n')
     speak()
 
 speak()
+
