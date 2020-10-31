@@ -4,6 +4,7 @@
 from telebot import types
 from config import site_url
 
+
 class keyboards:
 
     welcome_kbd = types.ReplyKeyboardMarkup(resize_keyboard="True")
@@ -12,5 +13,7 @@ class keyboards:
     welcome_kbd.row(support_btn)
 
     website_kbd = types.InlineKeyboardMarkup()
-    url_button = types.InlineKeyboardButton(text="Перейти на сайт", url=site_url)
+    url_button = types.InlineKeyboardButton(
+        text="Перейти на сайт", url=site_url
+        )
     website_kbd.add(url_button)
