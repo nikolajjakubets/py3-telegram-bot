@@ -1,7 +1,7 @@
 # PY3-Advanced-Telegram-Bot
 #### by Advanced Develope
 
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
+![Lint](https://github.com/advanceddev/py3-telegram-bot/workflows/Lint/badge.svg?branch=master)
 
 **Py3-Avanced-Telegram-Bot** - это обучаемый Telegram-бот, написанный командой Advanced Develope.
 
